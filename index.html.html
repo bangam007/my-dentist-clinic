@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MY Dentist Dental Clinic</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Poppins',sans-serif}
+body{background:#f4f9fb;color:#333}
+header{background:#0aa3a3;color:white;padding:20px}
+nav{display:flex;justify-content:space-between;align-items:center;max-width:1100px;margin:auto}
+nav h1{font-size:24px}
+nav ul{display:flex;list-style:none;gap:20px}
+nav a{color:white;text-decoration:none;font-weight:500}
+.hero{padding:80px 20px;text-align:center;background:linear-gradient(120deg,#0aa3a3,#5dd1d1);color:white}
+.hero h2{font-size:40px;margin-bottom:15px}
+.hero button{padding:12px 25px;border:none;background:white;color:#0aa3a3;font-weight:600;border-radius:6px;cursor:pointer}
+.container{max-width:1100px;margin:auto;padding:50px 20px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px}
+.card{background:white;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.08)}
+.booking form{display:grid;gap:15px}
+.booking input,.booking select{padding:10px;border:1px solid #ccc;border-radius:6px}
+.booking button{background:#0aa3a3;color:white;padding:12px;border:none;border-radius:6px;cursor:pointer}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.review{background:white;padding:20px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.08)}
+footer{background:#0aa3a3;color:white;text-align:center;padding:25px;margin-top:40px}
+</style>
+</head>
+<body>
+
+<header>
+<nav>
+<h1>MY Dentist</h1>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#booking">Book</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Your Smile, Our Priority</h2>
+<p>Professional dental care in Sambalpur</p>
+<button onclick="document.getElementById('booking').scrollIntoView()">Book Appointment</button>
+</section>
+
+<section id="about" class="container">
+<h2>About Our Clinic</h2>
+<p>MY Dentist Dental Clinic provides all kinds of oral and dental treatments with modern equipment and experienced professionals. Our mission is to provide comfortable and affordable dental care for everyone.</p>
+</section>
+
+<section id="services" class="container">
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">Teeth Cleaning</div>
+<div class="card">Root Canal Treatment</div>
+<div class="card">Dental Implants</div>
+<div class="card">Braces & Aligners</div>
+<div class="card">Tooth Extraction</div>
+<div class="card">Teeth Whitening</div>
+</div>
+</section>
+
+<section id="booking" class="container booking">
+<h2>Book an Appointment</h2>
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<input type="email" placeholder="Email" required>
+<select required>
+<option>Select Treatment</option>
+<option>Teeth Cleaning</option>
+<option>Root Canal</option>
+<option>Braces</option>
+<option>Implants</option>
+</select>
+<input type="date" required>
+<input type="time" required>
+<button type="submit">Confirm Appointment</button>
+</form>
+</section>
+
+<section class="container">
+<h2>Patient Reviews</h2>
+<div class="reviews">
+<div class="review">"Excellent dental care and very friendly doctor. Highly recommended!"</div>
+<div class="review">"Very clean clinic and painless treatment. Best dentist in Sambalpur."</div>
+<div class="review">"Professional service and affordable treatment."</div>
+</div>
+</section>
+
+<section id="contact" class="container">
+<h2>Contact Us</h2>
+<p><strong>Address:</strong> Church Chowk, Sambalpur, Odisha 768002</p>
+<p><strong>Phone:</strong> 87635 51300</p>
+<p><strong>Email:</strong> pkg.scb@gmail.com</p>
+<p><strong>Hours:</strong> Always Open</p>
+</section>
+
+<footer>
+<p>© 2026 MY Dentist Dental Clinic</p>
+</footer>
+
+</body>
+</html>
